@@ -51,6 +51,11 @@ section.wi {
   font-weight: bold;
 }
 
+.quote-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 .image {
   width: 100%;
   display: flex;
