@@ -90,7 +90,10 @@ section{
 .telefonos{
   display: flex !important;
   justify-content: center;
-  gap: 240px;
+  gap: 220px;
+  h6, p{
+    width: max-content !important;
+  }
 }
 .hero-image {
   width: 100%;
