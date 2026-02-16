@@ -87,6 +87,11 @@ section{
   font-size: 20px;
   font-weight: 400;
 }
+.telefonos{
+  display: flex !important;
+  justify-content: center;
+  gap: 240px;
+}
 .hero-image {
   width: 100%;
   max-width: 100%;
