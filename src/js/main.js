@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Fecha objetivo (YYYY-MM-DDTHH:MM:SS)
-const targetDate = new Date('2026-05-01T18:00:00').getTime();
+const targetDate = new Date('2026-05-30T18:00:00').getTime();
 
 /**
  * Actualiza la cuenta atrás
