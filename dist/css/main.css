@@ -56,7 +56,7 @@ main {
   z-index: 100;
   display: flex;
   gap: 0.5rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0.6rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
   backdrop-filter: blur(24px);
@@ -87,7 +87,6 @@ main {
 /* Móvil */
 @media (max-width: 767px) {
   .menu-nav {
-    justify-content: flex-start;
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;

@@ -76,7 +76,7 @@ main {
 
     display: flex;
     gap: .5rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     padding: 0.6rem;
 
@@ -126,7 +126,6 @@ main {
 /* Móvil */
 @media (max-width: 767px) {
   .menu-nav {
-    justify-content: flex-start;
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
