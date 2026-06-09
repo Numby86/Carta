@@ -7,7 +7,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../src/images/nero-marquina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 html {
@@ -49,8 +55,8 @@ main {
   top: 0;
   z-index: 100;
   display: flex;
-  gap: 0.75rem;
-  justify-content: center;
+  gap: 0.7rem;
+  justify-content: space-evenly;
   padding: 1rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
   backdrop-filter: blur(24px);
@@ -61,12 +67,12 @@ main {
 }
 .menu-nav a {
   text-decoration: none;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #f5f5f5;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
