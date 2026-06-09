@@ -75,10 +75,10 @@ main {
     z-index: 100;
 
     display: flex;
-    gap: .7rem;
+    gap: .5rem;
     justify-content: space-evenly;
 
-    padding: 1rem;
+    padding: 0.5rem 1rem;
 
     background: linear-gradient(
         180deg,
@@ -99,7 +99,7 @@ main {
     a {
         text-decoration: none;
 
-        padding: .4rem 0.7rem;
+        padding: .4rem 0.6rem;
 
         border-radius: 8px;
 
