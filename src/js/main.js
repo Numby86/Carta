@@ -1,26 +1,28 @@
+const nav = document.querySelector('.menu-nav');
 const sections = document.querySelectorAll('.menu-section');
 const links = document.querySelectorAll('.menu-nav-item');
 
 const setActiveMenuItem = () => {
-    let currentSection = null;
+    const navBottom = nav.getBoundingClientRect().bottom;
+
+    let activeSection = null;
 
     sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
 
-        if (rect.top <= 120 && rect.bottom >= 120) {
-            currentSection = section.id;
+        if (rect.top <= navBottom && rect.bottom > navBottom) {
+            activeSection = section.id;
         }
     });
-
-    if (!currentSection) return;
 
     links.forEach((link) => {
         link.classList.toggle(
             'active',
-            link.getAttribute('href') === `#${currentSection}`
+            link.getAttribute('href') === `#${activeSection}`
         );
     });
 };
 
 window.addEventListener('scroll', setActiveMenuItem);
+window.addEventListener('resize', setActiveMenuItem);
 window.addEventListener('load', setActiveMenuItem);
