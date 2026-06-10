@@ -272,3 +272,50 @@ main {
     margin-inline: auto;
   }
 }
+
+// .accordion,
+// .accordion * {
+//     all: unset;
+//     box-sizing: border-box;
+// }
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-button,
+.accordion-body {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: inherit !important;
+}
+
+.accordion-button {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $line !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent !important;
+    color: inherit !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button::after {
+    display: none !important;
+    content: none !important;
+}
+
+.image-item{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  max-width: 100%;
+  aspect-ratio: 1.5;
+}
