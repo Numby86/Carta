@@ -84,7 +84,7 @@ main {
   text-transform: uppercase;
   transition: all 0.25s ease;
 }
-.menu-nav a:hover {
+.menu-nav a:hover, .menu-nav a.active {
   background: #d6a354;
   border-color: #d6a354;
   color: #111;

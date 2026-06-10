@@ -120,7 +120,8 @@ main {
 
     transition: all .25s ease;
 
-    &:hover {
+    &:hover, 
+    &.active {
       background: $accent;
       border-color: $accent;
       color: #111;
