@@ -7,7 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../src/images/nero-marquina.jpg");
+  background: url("../../src/images/nero-marquina.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
