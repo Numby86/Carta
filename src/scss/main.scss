@@ -101,7 +101,7 @@ main {
     0 4px 20px rgba(0, 0, 0, .15),
     inset 0 1px 0 rgba(255, 255, 255, .05);
 
-  a {
+  &-item {
     text-decoration: none;
 
     padding: .4rem 0.6rem;
@@ -120,8 +120,8 @@ main {
 
     transition: all .25s ease;
 
-    &:hover, 
-    &.active {
+    &.active,
+    &:hover{
       background: $accent;
       border-color: $accent;
       color: #111;

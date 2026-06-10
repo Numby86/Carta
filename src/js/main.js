@@ -1,28 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.menu-section');
-    const navLinks = document.querySelectorAll('.menu-nav-item');
+const sections = document.querySelectorAll('.menu-section');
+const links = document.querySelectorAll('.menu-nav-item');
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) return;
+const setActiveMenuItem = () => {
+    let currentSection = null;
 
-                const id = entry.target.id;
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
 
-                navLinks.forEach((link) => {
-                    link.classList.remove('active');
-
-                    if (link.getAttribute('href') === `#${id}`) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-        },
-        {
-            threshold: 0.4,
-            rootMargin: '-80px 0px -40% 0px'
+        if (rect.top <= 120 && rect.bottom >= 120) {
+            currentSection = section.id;
         }
-    );
+    });
 
-    sections.forEach((section) => observer.observe(section));
-});
+    if (!currentSection) return;
+
+    links.forEach((link) => {
+        link.classList.toggle(
+            'active',
+            link.getAttribute('href') === `#${currentSection}`
+        );
+    });
+};
+
+window.addEventListener('scroll', setActiveMenuItem);
+window.addEventListener('load', setActiveMenuItem);
