@@ -67,6 +67,13 @@ main {
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+  
+  .menu-logo {
+    width: min(320px, 80vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .menu-nav {
